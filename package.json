@@ -1,0 +1,22 @@
+{
+  "name": "vscode-json-helper",
+  "displayName": "JSON Helper",
+  "description": "Prettify and validate JSON",
+  "version": "0.0.1",
+  "engines": { "vscode": ">=1.80.0" },
+  "activationEvents": [
+    "onCommand:jsonHelper.prettify",
+    "onCommand:jsonHelper.validate"
+  ],
+  "contributes": {
+    "commands": [
+      { "command": "jsonHelper.prettify", "title": "JSON Helper: Prettify" },
+      { "command": "jsonHelper.validate", "title": "JSON Helper: Validate" }
+    ]
+  },
+  "main": "extension.js",
+  "categories": ["Other"],
+  "publisher": "you",
+  "scripts": { "vscode:prepublish": "echo build step (optional)" },
+  "devDependencies": { }
+}
